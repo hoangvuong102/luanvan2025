@@ -1,0 +1,124 @@
+$red-color: #ea130c;
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    background-color: #ea130c;
+    color: white;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(210, 189, 188, 0.823);
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .top-links a {
+        color: white;
+        text-decoration: none;
+        padding-right: 35px;
+        font-size: 1.05rem;
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.main-bar {
+    background-color: $red-color;
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+
+    .main-bar-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-button {
+        background-color: #79a633; // Màu xanh lá cây
+        color: white;
+        border: none;
+        padding: 12px 15px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        align-self: flex-start; // Đẩy lên trên cùng
+    }
+
+    .logo-section {
+        padding-left: 185px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .site-logo {
+        max-width: 180px; // Điều chỉnh kích thước logo
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .right-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 1.1rem;
+        text-align: right;
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+            .cart-count {
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                background-color: #333;
+                border-radius: 50%;
+                padding: 2px 5px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .hotline {
+            padding-right: 30px;
+            font-weight: bold;
+        }
+    }
+}
+
+.nav-bar {
+    background-color: rgb(246, 241, 241);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.2s;
+            &:hover,
+            &.active {
+                color: $red-color;
+            }
+        }
+    }
+}
